@@ -167,7 +167,7 @@ function checkGameOver(){
     return false;
 }
 
-function rotaeBlock(array){
+function rotateBlock(array){
     var a = JSON.parse(JSON.stringify( array )); //참조없는 복사
     var p = a[1]; //center of rotation
     var m = a[0].x;
@@ -223,7 +223,7 @@ function initInput(){
             break;
             case GEngine.KEY_UP:
                 if(_block_state.y > 20)
-                _block_data = rotaeBlock(_block_data);
+                _block_data = rotateBlock(_block_data);
             break;
 
             case GEngine.KEY_SPACE:
